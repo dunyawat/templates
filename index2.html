@@ -8,352 +8,440 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="banner">
+
+<!---------------------- section header --------------------------->
+<header>
+    <div class="top">
         <div class="container">
-            <div class="head">
-                <div class="left">
-                    <h1>LOGO</h1>
-                </div>
-    
-                <div class="right">
-                    <h1>Contact</h1>
-                </div>
-                <div class="height">
-                
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="header">
+                        <div class="header__left">
+                            <div class="header__left__welcome">
+                                Welcome to our online store!
+                            </div>
+        
+                            <div class="dropdown header__left__language">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  English
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+        
+                            <div class="dropdown header__left__currency">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  USD
+                                </a>
+                              
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                  <a class="dropdown-item" href="#">USD</a>
+                                  <a class="dropdown-item" href="#">THB</a>
+                                  <a class="dropdown-item" href="#">CNY</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="header__right"> 
+                            
+                            <div class="header__right__search">
+                                search
+                            </div>
+        
+                            <div class="header__right__wish">
+                                wish-list
+                            </div>
+        
+                            <div class="dropdown header__right__account">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+        
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+        
+    
 
-    <header style="background-image: url('../../static/img2/hero.jpg')">
-
-    </header>
+    <!------------------------------ section navbar ------------------------->
 
     <nav>
         <div class="container">
-            <div class="row">
-                    <div class="col-2">
-                        <h5>หน้าแรก</h5>
+            <div class="nav">
+                <div class="nav__left">
+                    <div class="nav__left__logo">
+                        Logo
                     </div>
-                    <div class="col-2">
-                        <h5>สิ้นค้าทั้งหมด</h5>
+                </div>
+    
+                <div class="nav__right">
+                    <div class="nav__right__menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Lingerie</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
                     </div>
-                    <div class="col-2">
-                        <h5>วิธีการสั่งซื้อ</h5>
-                    </div>
-                    <div class="col-2">
-                        <h5>แจ้งชำระเงิน</h5>
-                    </div>
-                    <div class="col-2">
-                        <h5>เกี่ยวกับเรา</h5>
-                    </div>
-                    <div class="col-2">
-                        <h5>ติดต่อเรา</h5>
-                    </div>
+                    <!-- <div class="cart">
+                        cart
+                    </div> -->
+                </div>
             </div>
         </div>
     </nav>
+</header>
 
-    <div class="store mt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="search-container text-center mb-4">
-                        <form action="/action_page.php">
-                          <input type="text" placeholder="Search.." name="search">
-                          <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
+     <!------------------------------ section carousel (banner)------------------------->
 
-                    <div class="category">
-                        <div class="category__head text-center">
-                            <h3 class="mb-4">CATEGORY</h3>
-                        </div>
-                        <h5><strong>สิ้นค้าท้งหมด</strong> [0]</h5>
-                        <h5><strong>สินค้าใหม่</strong> [0]</h5>
-                        <h5><strong>สินค้าแนะนำ</strong> [0]</h5>
-                        <h5><strong>หมวดหมู่ตัวอย่าง</strong> [3]</h5>
-                        <ul>
-                            <li>ย่อย 1 [0]</li>
-                            <li>ย่อย 1 [0]</li>
-                            <li>ย่อย 1 [0]</li>
-                        </ul>
-                    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1551388749-6b3478890d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1474895300391-58fc2b6c8f62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1880&q=80" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1550769839-670461c55ae3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-                    <div class="link mt-5">
-                        <div class="card card1 mb-5">
-                            <div class="photo">
-                                <img src="static/img/buy.jpg" width="100%" alt="">
-                            </div>
-                            <div class="text text-center">
-                                <h4>แจ้งชำระเงิน</h4>
-                                <p>CLICK HERE</p>
-                            </div>
-                        </div>
+    <!-------------------------- sub-banner ---------------------------------------------->
 
-                        <div class="card card2 mb-5">
-                            <div class="photo">
-                                <img src="static/img/mail.jpg" width="100%" alt="">
-                            </div>
-                            <div class="text text-center">
-                                <h4>เช็คเลขพัสดุ</h4>
-                                <p>CLICK HERE</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card card3">
-                            <div class="photo">
-
-                            </div>
-                            <div class="text  text-center">
-                                LOGO
-                                <h4 class="mt-2">ติดต่อสอบถามเพิ่มเติม</h4>
-                                <p class=" mt-2">Line id :</p>
-                                <p class="mt-2">Phone :</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="member mt-5">
-                        <div class="member__head text-center mb-3">
-                            <h3>MEMBER</h3>
-                        </div>
-                        <div class="member__detail text-center">
-                            <div>
-                                <img src="static/img/member.jpg" width="100%"alt="">
-                            </div>
-                            <p>name</p>
-                        </div>
-                        <div class="member__list">
-                            <h5>รายการสั่งซื้อของฉัน</h5>
-                            <ul>
-                                <li>ทังหมด (2)</li>
-                                <li>รอการชำระเงิน</li>
-                                <li>รอตรวจสอบยอดเงิน</li>
-                                <li>รอจัดส่งสินค้า</li>
-                                <li>ส่งสินค้าเรียบร้อยแล้ว</li>
-                            </ul>
-                        </div>
-                        <button class="btn btn-outline-dark">logout</button>
-                    </div>
+    <div class="container" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col-6">
+                <img src="https://lh3.googleusercontent.com/proxy/kkmQ8_xoY3yfFLDxGDdUh4zQXk1Iqg7EODCE_2TfpZ2vucCE6ut9J-pPvuwdFkF0IKPW-ygy2O3ZesGdHAJUj2oHqwU-SN-5wqu4y2P9hcK4WQSrsZpKa8j30P_hnVwqlQ" width="100%" height="700px" alt="">
+            </div>
+            <div class="col-6">
+                <div style="margin-bottom: 30px;">
+                    <img src="https://i.guim.co.uk/img/media/edc61f29db14b78448247e25fd9d4abe7ba953a3/95_0_2930_1758/500.jpg?quality=85&auto=format&fit=max&s=3e2da39a8599e0692f133e5863b755ef" width="100%" height="335px" alt="">
                 </div>
-            
-                <div class="col-lg-9">
-                    <div class="store__head text-center  mb-5">
-                        <h1 class="mb-4">Welcome</h1>
 
-                        <img src="static/img2/head.jpg" width="100%" height="500" alt="">
-
-                        <div class="store__head--contact" style="background-color: #eee; color:black;">
-                            <div class="row">
-                                <div class="col-4">
-                                    Line :
-                                </div>
-                                <div class="col-4">
-                                    Phone :
-                                </div>
-                                <div class="col-4">
-                                    Facebook :
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="store__detail mb-5">
-                        <img src="static/img2/detail1.jpg" width="100%" height="800px" alt="">
-
-                        <div class="store__detail__category my-5">
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%"  alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-
-                            <div class="store__detail__category__list p-2">
-                                <div class="store__detail__category__list--img">
-                                    <img src="static/img/test.png" width="100%" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h5>Steel</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="store__detail__footer">
-                            <img src="static/img2/detail2.jpg" width="100%" height="300px" alt="">
-                            <div class="button">
-                                <button class="btn btn-light">ดูสินค้าเพิ่มเติม</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="store__newproduct">
-                        <div class="store__newproduct__head mb-4">
-                            <h3>NEW PRODUCTS</h3>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="store__newproduct card">
-                                    <img src="static/img2/item4.jpg" width="100%" height="250px" alt="">
-                                    <div class="store__newproduct-text" >
-                                        <p class="text-muted mb-2">สินค้าตัวอย่าง</p>
-                                        <p>0.00 บาท</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="store__newproduct card">
-                                    <img src="static/img2/item3.jpg" width="100%" height="250px" alt="">
-                                    <div class="store__newproduct-text" >
-                                        <p class="text-muted mb-2">สินค้าตัวอย่าง</p>
-                                        <p>0.00 บาท</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="store__newproduct card">
-                                    <img src="static/img2/item2.jpg" width="100%" height="250px" alt="">
-                                    <div class="store__newproduct-text" >
-                                        <p class="text-muted mb-2">สินค้าตัวอย่าง</p>
-                                        <p>0.00 บาท</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="store__newproduct card">
-                                    <img src="static/img2/item1.jpg" width="100%" height="250px" alt="">
-                                    <div class="store__newproduct-text" >
-                                        <p class="text-muted mb-2">สินค้าตัวอย่าง</p>
-                                        <p>0.00 บาท</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-center mt-3">
-                            <button class="btn btn-outline-secondary">ดูสินค้ามาใหม่ทั้งหมด</button>
-                        </div>
-                        
-                    </div>
-
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQDwhxnyS-E6G98QtNfqEoHw6dAd8JqwMT-z0pNgw4m2OefC3Bw" width="100%" height="335px" alt="">
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="mt-5">
+    <!-------------------------- products ---------------------------------------------->
+    <div class="products">
         <div class="container">
-            <div class="row">
-                <!-- <div class="col-3"></div> -->
-                <div class="col-2 text-center">
-                    <h5>หน้าแรก</h5>
+            <div class="products__head text-center">
+                <h1>Products</h1>
+            </div>
+            <div class="products__box">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="tiem">
+                            <div class="products__box__thumb">
+                                <div class="products__box__thumb__imgblock">
+                                    <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                    <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                    <ul class="button-group">
+                                        <li><button class="btn">Add to Cart</button></li>
+                                    <ul>
+                                </div>
+                                <div class="products__box__thumb__caption">
+                                    <h4>Dortmund Shirt</h4>
+                                    <p>$122.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tiem">
+                            <div class="products__box__thumb">
+                                <div class="products__box__thumb__imgblock">
+                                    <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                    <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                    <ul class="button-group">
+                                        <li><button class="btn">Add to Cart</button></li>
+                                    <ul>
+                                </div>
+                                <div class="products__box__thumb__caption">
+                                    <h4>Dortmund Shirt</h4>
+                                    <p>$122.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tiem">
+                            <div class="products__box__thumb">
+                                <div class="products__box__thumb__imgblock">
+                                    <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                    <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                    <ul class="button-group">
+                                        <li><button class="btn">Add to Cart</button></li>
+                                    <ul>
+                                </div>
+                                <div class="products__box__thumb__caption">
+                                    <h4>Dortmund Shirt</h4>
+                                    <p>$122.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tiem">
+                            <div class="products__box__thumb">
+                                <div class="products__box__thumb__imgblock">
+                                    <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                    <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                    <ul class="button-group">
+                                        <li><button class="btn">Add to Cart</button></li>
+                                    <ul>
+                                </div>
+                                <div class="products__box__thumb__caption">
+                                    <h4>Dortmund Shirt</h4>
+                                    <p>$122.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2 text-center">
-                    <h5>สิ้นค้าทั้งหมด</h5>
-                </div>
-                <div class="col-2 text-center">
-                    <h5>วิธีการสั่งซื้อ</h5>
-                </div>
-                <div class="col-2 text-center">
-                    <h5>แจ้งชำระเงิน</h5>
-                </div>
-                <div class="col-2 text-center">
-                    <h5>เกี่ยวกับเรา</h5>
-                </div>
-                <div class="col-2 text-center">
-                    <h5>ติดต่อเรา</h5>
-                </div>
-                <!-- <div class="col-3"></div> -->
             </div>
 
-            <div class="text-center mt-5 mb-5">
-                <h1>LOGO</h1>
+            <div class="more text-center">
+                <button class="btn">View More All Products</button>
             </div>
         </div>
-    </footer>
+    </div>
+
+
+    <!-- --------------------- best seller ------------------------ -->
+
+    <div class="best mt-5">
+        <div class="container">
+            <div class="products__head text-center">
+                <h1>Best Seller</h1>
+            </div>
+
+            <div class="category text-center">
+                <ul>
+                    <li>Shirt</li>
+                    <li>Kit</li>
+                    <li>Away</li>
+                    <li>Bags</li>
+                    <li>Ball</li>
+                    <li>sock</li>
+                </ul>
+            </div>
+
+            <div class="products__box">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="tiem">
+                            <div class="products__box__thumb">
+                                <div class="products__box__thumb__imgblock">
+                                    <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                    <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                    <ul class="button-group">
+                                        <li><button class="btn">Add to Cart</button></li>
+                                    <ul>
+                                </div>
+                                <div class="products__box__thumb__caption">
+                                    <h4>Dortmund Shirt</h4>
+                                    <p>$122.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tiem">
+                            <div class="products__box__thumb">
+                                <div class="products__box__thumb__imgblock">
+                                    <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                    <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                    <ul class="button-group">
+                                        <li><button class="btn">Add to Cart</button></li>
+                                    <ul>
+                                </div>
+                                <div class="products__box__thumb__caption">
+                                    <h4>Dortmund Shirt</h4>
+                                    <p>$122.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tiem">
+                            <div class="products__box__thumb">
+                                <div class="products__box__thumb__imgblock">
+                                    <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                    <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                    <ul class="button-group">
+                                        <li><button class="btn">Add to Cart</button></li>
+                                    <ul>
+                                </div>
+                                <div class="products__box__thumb__caption">
+                                    <h4>Dortmund Shirt</h4>
+                                    <p>$122.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tiem">
+                            <div class="products__box__thumb">
+                                <div class="products__box__thumb__imgblock">
+                                    <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                    <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                    <ul class="button-group">
+                                        <li><button class="btn">Add to Cart</button></li>
+                                    <ul>
+                                </div>
+                                <div class="products__box__thumb__caption">
+                                    <h4>Dortmund Shirt</h4>
+                                    <p>$122.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------   top footer   -------------------------------------->
+    <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <h3>Sign up for our Newsletter :-</h3>
+                    <div class="inline-form">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <button type="submit" class="btn btn-large btn-primary">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="social">
+                        <h3>Follow me :-</h3>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- middle footer --------------------------------------->
+    <div class="middle-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Categorie</h4>
+                    <ul>
+                        <li><a href="#">Chelsea</a></li>
+                        <li><a href="#">ManU</a></li>
+                        <li><a href="#">Arsenal</a></li>
+                        <li><a href="#">ManCity</a></li>
+                        <li><a href="#">Liverpool</a></li>
+                        <li><a href="#">TOT</a></li>
+                        <li><a href="#">Barcelona</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Juventus</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h4>Categorie</h4>
+                    <ul>
+                        <li><a href="#">Chelsea</a></li>
+                        <li><a href="#">ManU</a></li>
+                        <li><a href="#">Arsenal</a></li>
+                        <li><a href="#">ManCity</a></li>
+                        <li><a href="#">Liverpool</a></li>
+                        <li><a href="#">TOT</a></li>
+                        <li><a href="#">Barcelona</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Juventus</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h4>Categorie</h4>
+                    <ul>
+                        <li><a href="#">Chelsea</a></li>
+                        <li><a href="#">ManU</a></li>
+                        <li><a href="#">Arsenal</a></li>
+                        <li><a href="#">ManCity</a></li>
+                        <li><a href="#">Liverpool</a></li>
+                        <li><a href="#">TOT</a></li>
+                        <li><a href="#">Barcelona</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Juventus</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        
+
+
+    <!----------------------- bottom footer --------------------------------------->
+    
+    <div class="container">
+        <div class="bottom-footer text-center">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p><a href="https://www.linkedin.com/in/dunyawat-hongsupangpan-9895b318a/" target="_blank">Copyright - Created by .... © 2020</a></p>
+        </div>
+    </div>
+
+
+
+
+
     
     
 
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

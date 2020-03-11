@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+     <!---------------------- section header --------------------------->
+<header>
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="header">
+                        <div class="header__left">
+                            <div class="header__left__welcome">
+                                Welcome to our online store!
+                            </div>
+        
+                            <div class="dropdown header__left__language">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  English
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+        
+                            <div class="dropdown header__left__currency">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  USD
+                                </a>
+                              
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                  <a class="dropdown-item" href="#">USD</a>
+                                  <a class="dropdown-item" href="#">THB</a>
+                                  <a class="dropdown-item" href="#">CNY</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="header__right"> 
+                            
+                            <div class="header__right__search">
+                                search
+                            </div>
+        
+                            <div class="header__right__wish">
+                                wish-list
+                            </div>
+        
+                            <div class="dropdown header__right__account">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+        
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+
+    <!------------------------------ section navbar ------------------------->
+
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <div class="nav__left">
+                    <div class="nav__left__logo">
+                        Logo
+                    </div>
+                </div>
+    
+                <div class="nav__right">
+                    <div class="nav__right__menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Lingerie</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="cart">
+                        cart
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="store mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="category">
+                    <div class="category__head head">
+                        <h5 class="mb-4">Top Category</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="plus" style="height: 20px; width: 20px;
+                            z-index: 9;
+                            text-align: center;
+                            cursor: pointer;
+                            position: static;
+                            float: right;">&#43;
+                            </div>
+                            <a href="#">Desktops</a>
+                            <div class="toggle">
+                                <ul class="">
+                                    <li>PC</li>
+                                    <li>MAC</li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li><a href="#">Laptops & Notebooks</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Phones & PDAs</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">MP3 Players</a></li>
+                    </ul>
+                </div>
+
+                <div class="refine-search">
+                    <div class="refine-search__head head">
+                        <h5 class="mb-4">Refine Search</h3>
+                    </div>
+                    <div class="refine-search__list">
+                        <p class="refine-search__list__tiem">Color</p>
+                        <div class="refine-search__list__tiem">
+                            <div class="filter">
+                                <label class="checkbox">
+                                    <input name="filter" type="checkbox" value="1">
+                                    Black (7)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="refine-search__list__tiem">
+                            <div class="filter">
+                                <label class="checkbox">
+                                    <input name="filter" type="checkbox" value="1">
+                                    Blue (6)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="refine-search__list__tiem">
+                            <div class="filter">
+                                <label class="checkbox">
+                                    <input name="filter" type="checkbox" value="1">
+                                    Red (6)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="refine-search__list">
+                        <p class="refine-search__list__tiem">Price</p>
+                        <div class="refine-search__list__tiem">
+                            <div class="filter">
+                                <label class="checkbox">
+                                    <input name="filter" type="checkbox" value="1">
+                                    $100-$300 (6)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="refine-search__list__tiem">
+                            <div class="filter">
+                                <label class="checkbox">
+                                    <input name="filter" type="checkbox" value="1">
+                                    $301-$1000 (6)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="refine-search__list">
+                        <p class="refine-search__list__tiem">Size</p>
+                        <div class="refine-search__list__tiem">
+                            <div class="filter">
+                                <label class="checkbox">
+                                    <input name="filter" type="checkbox" value="1">
+                                    Big (3)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="refine-search__list__tiem">
+                            <div class="filter">
+                                <label class="checkbox">
+                                    <input name="filter" type="checkbox" value="1">
+                                    Medium (3)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="refine-search__list__tiem">
+                            <div class="filter">
+                                <label class="checkbox">
+                                    <input name="filter" type="checkbox" value="1">
+                                    Small (1)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+                    
+                </div>
+
+                <div class="link mt-5">
+                    <div class="card card1 mb-5">
+                        <div class="photo">
+                            <img src="static/img/buy.jpg" width="100%" alt="">
+                        </div>
+                        <div class="text text-center">
+                            <h4>แจ้งชำระเงิน</h4>
+                            <p>CLICK HERE</p>
+                        </div>
+                    </div>      
+                </div>       
+            </div>
+        
+            <div class="col-lg-9">
+
+                <div>
+                    <button class="lay-list">List</button>
+                    <button class="lay-grid">Grid</button>
+                </div>
+
+                <div class="row test">
+                        <div class="col-lg-4 grid-layout">
+                            <div class="tiem">
+                                <div class="products__box__thumb">
+                                    <div class="products__box__thumb__imgblock">
+                                        <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                        <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                    <div class="products__box__thumb__caption">
+                                        <h4>Dortmund Shirt</h4>
+                                        <p>$122.00</p>
+                                        <p class="products__box__thumb__caption-detail">More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. Browse through your music collection by flipping..</p>
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="col-lg-4 grid-layout">
+                            <div class="tiem">
+                                <div class="products__box__thumb">
+                                    <div class="products__box__thumb__imgblock">
+                                        <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                        <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                    <div class="products__box__thumb__caption">
+                                        <h4>Dortmund Shirt</h4>
+                                        <p>$122.00</p>
+                                        <p class="products__box__thumb__caption-detail">More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. Browse through your music collection by flipping..</p>
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 grid-layout">
+                            <div class="tiem">
+                                <div class="products__box__thumb">
+                                    <div class="products__box__thumb__imgblock">
+                                        <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                        <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                    <div class="products__box__thumb__caption">
+                                        <h4>Dortmund Shirt</h4>
+                                        <p>$122.00</p>
+                                        <p class="products__box__thumb__caption-detail">More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. Browse through your music collection by flipping..</p>
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 grid-layout">
+                            <div class="tiem">
+                                <div class="products__box__thumb">
+                                    <div class="products__box__thumb__imgblock">
+                                        <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                        <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                    <div class="products__box__thumb__caption">
+                                        <h4>Dortmund Shirt</h4>
+                                        <p>$122.00</p>
+                                        <p class="products__box__thumb__caption-detail">More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. Browse through your music collection by flipping..</p>
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 grid-layout">
+                            <div class="tiem">
+                                <div class="products__box__thumb">
+                                    <div class="products__box__thumb__imgblock">
+                                        <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                        <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                    <div class="products__box__thumb__caption">
+                                        <h4>Dortmund Shirt</h4>
+                                        <p>$122.00</p>
+                                        <p class="products__box__thumb__caption-detail">More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. Browse through your music collection by flipping..</p>
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 grid-layout">
+                            <div class="tiem">
+                                <div class="products__box__thumb">
+                                    <div class="products__box__thumb__imgblock">
+                                        <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                        <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                    <div class="products__box__thumb__caption">
+                                        <h4>Dortmund Shirt</h4>
+                                        <p>$122.00</p>
+                                        <p class="products__box__thumb__caption-detail">More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. Browse through your music collection by flipping..</p>
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 grid-layout">
+                            <div class="tiem">
+                                <div class="products__box__thumb">
+                                    <div class="products__box__thumb__imgblock">
+                                        <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                        <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                    <div class="products__box__thumb__caption">
+                                        <h4>Dortmund Shirt</h4>
+                                        <p>$122.00</p>
+                                        <p class="products__box__thumb__caption-detail">More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. Browse through your music collection by flipping..</p>
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 grid-layout">
+                            <div class="tiem">
+                                <div class="products__box__thumb">
+                                    <div class="products__box__thumb__imgblock">
+                                        <img src="https://images.sportsdirect.com/images/products/37713513_l.jpg" width="100%" height="350px" alt="">
+                                        <img src="https://i1.wp.com/llyne.com/wp-content/uploads/2019/10/puma-borussia-dortmund-home-jersey-2019-02-back.jpg?fit=1500%2C1500&ssl=1" width="100%" height="350px" alt="">
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                    <div class="products__box__thumb__caption">
+                                        <h4>Dortmund Shirt</h4>
+                                        <p>$122.00</p>
+                                        <p class="products__box__thumb__caption-detail">More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. Browse through your music collection by flipping..</p>
+                                        <ul class="button-group">
+                                            <li><button class="btn">Add to Cart</button></li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>           
+</div>
+    
+
+
+
+    <!-----------------------   top footer   -------------------------------------->
+    <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <h3>Sign up for our Newsletter :-</h3>
+                    <div class="inline-form">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <button type="submit" class="btn btn-large btn-primary">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="social">
+                        <h3>Follow me :-</h3>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- middle footer --------------------------------------->
+    <div class="middle-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Categorie</h4>
+                    <ul>
+                        <li><a href="#">Chelsea</a></li>
+                        <li><a href="#">ManU</a></li>
+                        <li><a href="#">Arsenal</a></li>
+                        <li><a href="#">ManCity</a></li>
+                        <li><a href="#">Liverpool</a></li>
+                        <li><a href="#">TOT</a></li>
+                        <li><a href="#">Barcelona</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Juventus</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h4>Categorie</h4>
+                    <ul>
+                        <li><a href="#">Chelsea</a></li>
+                        <li><a href="#">ManU</a></li>
+                        <li><a href="#">Arsenal</a></li>
+                        <li><a href="#">ManCity</a></li>
+                        <li><a href="#">Liverpool</a></li>
+                        <li><a href="#">TOT</a></li>
+                        <li><a href="#">Barcelona</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Juventus</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h4>Categorie</h4>
+                    <ul>
+                        <li><a href="#">Chelsea</a></li>
+                        <li><a href="#">ManU</a></li>
+                        <li><a href="#">Arsenal</a></li>
+                        <li><a href="#">ManCity</a></li>
+                        <li><a href="#">Liverpool</a></li>
+                        <li><a href="#">TOT</a></li>
+                        <li><a href="#">Barcelona</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Juventus</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        
+
+
+    <!----------------------- bottom footer --------------------------------------->
+    
+    <div class="container">
+        <div class="bottom-footer text-center">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p><a href="https://www.linkedin.com/in/dunyawat-hongsupangpan-9895b318a/" target="_blank">Copyright - Created by .... © 2020</a></p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        if ($('.lay-list').click( function(){
+            $(".test").children().removeClass();  
+            {
+                $(".test").children().addClass('col-lg-12 list-layout');
+            }
+        }));
+
+        if ($('.lay-grid').click( function(){
+            $(".test").children().removeClass();  
+            {
+                $(".test").children().addClass('col-lg-4 grid-layout');
+            }
+        }));
+
+        if ($('.plus').click( function(){
+                
+                $(".toggle").children().toggleClass('actived');
+        }));
+
+        
+
+        
+
+    </script>
+</body>
+</html>
