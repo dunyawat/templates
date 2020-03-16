@@ -38,7 +38,10 @@ header {
         float: right; }
       header .top .header__right__search {
         float: right;
-        padding: 10px 20px 10px 0; }
+        padding: 10px 20px 10px 0;
+        position: static; }
+        header .top .header__right__search .input-lg {
+          display: none; }
       header .top .header__right__wish {
         float: right;
         padding: 10px 20px 10px 0; }
@@ -52,23 +55,76 @@ header {
       transform: translateY(-50%); }
     header nav .container .nav .nav__right {
       position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%); }
-      header nav .container .nav .nav__right__menu ul {
-        list-style: none; }
-        header nav .container .nav .nav__right__menu ul li {
-          display: inline-block; }
-          header nav .container .nav .nav__right__menu ul li a {
-            padding: 10px 22px;
-            color: black; }
-            header nav .container .nav .nav__right__menu ul li a:hover {
-              text-decoration: none;
-              background-color: black;
-              color: white; }
+      top: 40%;
+      right: 0; }
+      header nav .container .nav .nav__right__menu {
+        display: inline-block; }
+        header nav .container .nav .nav__right__menu ul {
+          list-style: none; }
+          header nav .container .nav .nav__right__menu ul li {
+            display: inline-block; }
+            header nav .container .nav .nav__right__menu ul li a {
+              padding: 10px 22px;
+              color: black; }
+              header nav .container .nav .nav__right__menu ul li a:hover {
+                text-decoration: none;
+                background-color: black;
+                color: white; }
+  header nav .container #cart {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; }
+    header nav .container #cart > .btn {
+      font-size: 14px;
+      line-height: 18px;
+      color: #000;
+      background: none;
+      border: 0;
+      text-shadow: none;
+      margin: 0 auto;
+      width: auto;
+      -ms-text-align-last: auto;
+      text-align: left;
+      padding: 0; }
+      header nav .container #cart > .btn:focus {
+        outline: none;
+        box-shadow: none; }
+      header nav .container #cart > .btn #cart-total {
+        background: url(http://html.lionode.com/hotwear/hw01/image/sprite.png) no-repeat scroll 0 0;
+        padding: 13px 0px 10px 36px;
+        font-weight: 500;
+        display: block; }
+    header nav .container #cart .dropdown-toggle::after {
+      content: none;
+      border: none; }
+    header nav .container #cart .dropdown-menu {
+      background: #fff;
+      z-index: 1001;
+      margin-left: -280px;
+      width: 300px;
+      padding: 0px 7px; }
+      header nav .container #cart .dropdown-menu table {
+        border: none; }
+        header nav .container #cart .dropdown-menu table td {
+          border: none;
+          background-color: white;
+          padding: 8px; }
+          header nav .container #cart .dropdown-menu table td .btn-danger {
+            padding: 0px 3px;
+            background: none;
+            border: none; }
+            header nav .container #cart .dropdown-menu table td .btn-danger .fa {
+              font-size: 12px;
+              color: red; }
+            header nav .container #cart .dropdown-menu table td .btn-danger .fa-times:before {
+              content: "\f00d"; }
 
 .carousel-inner {
   height: 800px; }
+
+.bb:hover {
+  transition: all ease 0.3s;
+  opacity: 0.7; }
 
 .products__head {
   color: white; }
@@ -132,6 +188,63 @@ header {
     .best ul li {
       display: inline-block;
       padding: 0 40px; }
+
+.last-news {
+  color: white; }
+  .last-news .blog .img-blog {
+    position: relative; }
+    .last-news .blog .img-blog .blog-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition-duration: 500ms; }
+    .last-news .blog .img-blog .readmore-hover {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 45%;
+      text-align: center;
+      opacity: 0;
+      transition-duration: 500ms; }
+      .last-news .blog .img-blog .readmore-hover a {
+        color: white;
+        text-decoration: none; }
+  .last-news .blog .content-blog .blog-date {
+    background: #FFE600 none repeat scroll 0 0;
+    color: #000;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: -34px 0 0;
+    position: absolute;
+    z-index: 999999;
+    font-weight: 400; }
+  .last-news .blog .content-blog h2 {
+    font-size: 22px;
+    padding: 15px 0;
+    border-bottom: 1px solid #333; }
+    .last-news .blog .content-blog h2 a {
+      color: white; }
+      .last-news .blog .content-blog h2 a:hover {
+        color: yellow;
+        text-decoration: none; }
+  .last-news .blog .content-blog .blog-author {
+    font-style: italic;
+    padding: 0 15px 0 0; }
+    .last-news .blog .content-blog .blog-author a {
+      color: white; }
+      .last-news .blog .content-blog .blog-author a:hover {
+        color: yellow;
+        text-decoration: none; }
+  .last-news .blog:hover .img-blog .blog-hover {
+    opacity: 1;
+    transition-duration: 500ms; }
+  .last-news .blog:hover .img-blog .readmore-hover {
+    opacity: 1;
+    transition-duration: 500ms; }
 
 .top-footer {
   background-color: yellow;
@@ -501,6 +614,13 @@ th, td {
   border-radius: 0;
   margin: 5px 0;
   background-color: #3e3e3e; }
+  .accordion .card-header h2 .btn-link {
+    font-weight: 500;
+    font-size: 17px;
+    color: yellow;
+    text-decoration: none; }
+  .accordion .card-header h2 .collapsed {
+    color: #a2a2a2 !important; }
   .accordion .card-body {
     background-color: black; }
     .accordion .card-body .input-group {
@@ -509,3 +629,6 @@ th, td {
         float: left;
         width: auto;
         margin-bottom: 0; }
+
+.payment-old, .payment-new {
+  display: none; }

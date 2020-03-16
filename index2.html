@@ -48,7 +48,7 @@
         
                         <div class="header__right"> 
                             
-                            <div class="header__right__search">
+                            <div class="header__right__search" id="search">
                                 search
                             </div>
         
@@ -98,9 +98,53 @@
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
-                    <!-- <div class="cart">
-                        cart
-                    </div> -->
+                    <div class="btn-group" id="cart">
+                        <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-dropdown-button"
+                        id="dropdownMenuLink3" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                            <span id="cart-total"> (01)</span> 
+                        </button>
+                        <ul class="dropdown-menu cart-dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                            <li>
+                              <table class="table table-striped">
+                                <tbody>
+                                  <tr>
+                                    <td class="text-center"><a href="#"><img class="img-thumbnail" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" src="https://images.unsplash.com/photo-1578467759458-50ac153b78b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></a></td>
+                                    <td class="text-left"><a href="#">lorem ippsum dolor dummy</a></td>
+                                    <td class="text-right">x 1</td>
+                                    <td class="text-right">$254.00</td>
+                                    <td class="text-center"><button class="btn btn-danger btn-xs" title="Remove" type="button"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </li>
+                            <li>
+                              <div style="border-top:1px solid #dee2e6 ;">
+                                <table class="table table-bordered">
+                                  <tbody>
+                                    <tr>
+                                      <td class="text-right"><strong>Sub-Total</strong></td>
+                                      <td class="text-right">$210.00</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                                      <td class="text-right">$2.00</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-right"><strong>VAT (20%)</strong></td>
+                                      <td class="text-right">$42.00</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-right"><strong>Total</strong></td>
+                                      <td class="text-right">$254.00</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p class="text-right"> <span class="btn-viewcart"><a href="cart.html"><strong><i class="fa fa-shopping-cart"></i> View Cart</strong></a></span> <span class="btn-checkout"><a href="checkout.html"><strong><i class="fa fa-share"></i> Checkout</strong></a></span> </p>
+                              </div>
+                            </li>
+                          </ul>
+                        <!-- <a href="cart.html">Cart</a> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,15 +185,27 @@
     <div class="container" style="margin-top: 30px;">
         <div class="row">
             <div class="col-6">
-                <img src="https://lh3.googleusercontent.com/proxy/kkmQ8_xoY3yfFLDxGDdUh4zQXk1Iqg7EODCE_2TfpZ2vucCE6ut9J-pPvuwdFkF0IKPW-ygy2O3ZesGdHAJUj2oHqwU-SN-5wqu4y2P9hcK4WQSrsZpKa8j30P_hnVwqlQ" width="100%" height="700px" alt="">
+                <div class="bb">
+                    <a href="#">
+                        <img src="https://images.unsplash.com/photo-1569225022281-f652746229fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" width="100%" height="700px" alt="">
+                    </a>
+                </div>
             </div>
             <div class="col-6">
                 <div style="margin-bottom: 30px;">
-                    <img src="https://i.guim.co.uk/img/media/edc61f29db14b78448247e25fd9d4abe7ba953a3/95_0_2930_1758/500.jpg?quality=85&auto=format&fit=max&s=3e2da39a8599e0692f133e5863b755ef" width="100%" height="335px" alt="">
+                    <div class="bb">
+                        <a href="#">
+                            <img src="https://i.guim.co.uk/img/media/edc61f29db14b78448247e25fd9d4abe7ba953a3/95_0_2930_1758/500.jpg?quality=85&auto=format&fit=max&s=3e2da39a8599e0692f133e5863b755ef" width="100%" height="335px" alt="">
+                        </a>
+                    </div>
                 </div>
 
                 <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQDwhxnyS-E6G98QtNfqEoHw6dAd8JqwMT-z0pNgw4m2OefC3Bw" width="100%" height="335px" alt="">
+                    <div class="bb">
+                        <a href="#">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQDwhxnyS-E6G98QtNfqEoHw6dAd8JqwMT-z0pNgw4m2OefC3Bw" width="100%" height="335px" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -511,101 +567,160 @@
         </div>
     </div>
 
-    <!-----------------------   top footer   -------------------------------------->
-    <div class="top-footer">
+    <div class="bottom-banner mb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-7">
-                    <h3>Sign up for our Newsletter :-</h3>
-                    <div class="inline-form">
-                        <input type="text" class="form-control" placeholder="Email">
-                        <button type="submit" class="btn btn-large btn-primary">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-5">
-                    <div class="social">
-                        <h3>Follow me :-</h3>
-    
-                    </div>
-                </div>
+            <div class="bb">
+                <a href="#">
+                    <img src="https://images.unsplash.com/photo-1523643963577-22458739a0ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" width="100%" height="200px" alt="">
+                </a>
             </div>
         </div>
     </div>
 
-    <!----------------------- middle footer --------------------------------------->
-    <div class="middle-footer">
+    <div class="last-news my-5">
         <div class="container">
+            <div class="last-news__head text-center mb-4">
+                <h1>Latest News</h1>
+            </div>
             <div class="row">
-                <div class="col-lg-3">
-                    <h1>Logo</h1>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Categorie</h4>
-                    <ul>
-                        <li><a href="#">Chelsea</a></li>
-                        <li><a href="#">ManU</a></li>
-                        <li><a href="#">Arsenal</a></li>
-                        <li><a href="#">ManCity</a></li>
-                        <li><a href="#">Liverpool</a></li>
-                        <li><a href="#">TOT</a></li>
-                        <li><a href="#">Barcelona</a></li>
-                        <li><a href="#">Napoli</a></li>
-                        <li><a href="#">Juventus</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3">
-                    <h4>Categorie</h4>
-                    <ul>
-                        <li><a href="#">Chelsea</a></li>
-                        <li><a href="#">ManU</a></li>
-                        <li><a href="#">Arsenal</a></li>
-                        <li><a href="#">ManCity</a></li>
-                        <li><a href="#">Liverpool</a></li>
-                        <li><a href="#">TOT</a></li>
-                        <li><a href="#">Barcelona</a></li>
-                        <li><a href="#">Napoli</a></li>
-                        <li><a href="#">Juventus</a></li>
-                    </ul>
+                <div class="col-6 blog">
+                    <div class="img-blog">
+                        <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350" width="100%" height="300px" alt="">
+                        <span class="blog-hover"></span>
+                        <span class="readmore-hover">
+                            <a href="#">Read More</a> 
+                        </span>
+                    </div>
+                    <div class="content-blog">
+                        <span class="blog-date">02/05/2016</span>
+                        <h2 class="blog-name">
+                            <a href="#">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil, aspernatur ...
+                            </a>
+                        </h2>
+                        <span class="blog-author">By<a href="#"> xxx</a></span>
+                        <span class="blog-comment">3Comments</span>
+                    </div>
                 </div>
 
-                <div class="col-lg-3">
-                    <h4>Categorie</h4>
-                    <ul>
-                        <li><a href="#">Chelsea</a></li>
-                        <li><a href="#">ManU</a></li>
-                        <li><a href="#">Arsenal</a></li>
-                        <li><a href="#">ManCity</a></li>
-                        <li><a href="#">Liverpool</a></li>
-                        <li><a href="#">TOT</a></li>
-                        <li><a href="#">Barcelona</a></li>
-                        <li><a href="#">Napoli</a></li>
-                        <li><a href="#">Juventus</a></li>
-                    </ul>
+                <div class="col-6 blog">
+                    <div class="img-blog">
+                        <img src="https://images.unsplash.com/photo-1569426489641-24e9e4028fa3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400" width="100%" height="300px" alt="">
+                        <span class="blog-hover"></span>
+                        <span class="readmore-hover">
+                            <a href="#">Read More</a> 
+                        </span>
+                    </div>
+                    <div class="content-blog">
+                        <span class="blog-date">02/05/2016</span>
+                        <h2 class="blog-name">
+                            <a href="#">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil, aspernatur ...
+                            </a>
+                        </h2>
+                        <span class="blog-author">By<a href="#"> xxx</a></span>
+                        <span class="blog-comment">3Comments</span>
+                    </div>
                 </div>
-                
+            </div>
             </div>
         </div>
-    </div>
+
+        <!-----------------------   top footer   -------------------------------------->
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <h3>Sign up for our Newsletter :-</h3>
+                        <div class="inline-form">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <button type="submit" class="btn btn-large btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="social">
+                            <h3>Follow me :-</h3>
         
-
-
-    <!----------------------- bottom footer --------------------------------------->
-    
-    <div class="container">
-        <div class="bottom-footer text-center">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <p><a href="https://www.linkedin.com/in/dunyawat-hongsupangpan-9895b318a/" target="_blank">Copyright - Created by .... © 2020</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <!----------------------- middle footer --------------------------------------->
+        <div class="middle-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h1>Logo</h1>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Categorie</h4>
+                        <ul>
+                            <li><a href="#">Chelsea</a></li>
+                            <li><a href="#">ManU</a></li>
+                            <li><a href="#">Arsenal</a></li>
+                            <li><a href="#">ManCity</a></li>
+                            <li><a href="#">Liverpool</a></li>
+                            <li><a href="#">TOT</a></li>
+                            <li><a href="#">Barcelona</a></li>
+                            <li><a href="#">Napoli</a></li>
+                            <li><a href="#">Juventus</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h4>Categorie</h4>
+                        <ul>
+                            <li><a href="#">Chelsea</a></li>
+                            <li><a href="#">ManU</a></li>
+                            <li><a href="#">Arsenal</a></li>
+                            <li><a href="#">ManCity</a></li>
+                            <li><a href="#">Liverpool</a></li>
+                            <li><a href="#">TOT</a></li>
+                            <li><a href="#">Barcelona</a></li>
+                            <li><a href="#">Napoli</a></li>
+                            <li><a href="#">Juventus</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h4>Categorie</h4>
+                        <ul>
+                            <li><a href="#">Chelsea</a></li>
+                            <li><a href="#">ManU</a></li>
+                            <li><a href="#">Arsenal</a></li>
+                            <li><a href="#">ManCity</a></li>
+                            <li><a href="#">Liverpool</a></li>
+                            <li><a href="#">TOT</a></li>
+                            <li><a href="#">Barcelona</a></li>
+                            <li><a href="#">Napoli</a></li>
+                            <li><a href="#">Juventus</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            
+
+
+        <!----------------------- bottom footer --------------------------------------->
+        
+        <div class="container">
+            <div class="bottom-footer text-center">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <p><a href="https://www.linkedin.com/in/dunyawat-hongsupangpan-9895b318a/" target="_blank">Copyright - Created by .... © 2020</a></p>
+            </div>
+        </div>
 
 
 
