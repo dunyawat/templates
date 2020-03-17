@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!---------------------- section header --------------------------->
+ <header>
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="header">
+                        <div class="header__left">
+                            <div class="header__left__welcome">
+                                Welcome to our online store!
+                            </div>
+        
+                            <div class="dropdown header__left__language">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  English
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+        
+                            <div class="dropdown header__left__currency">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  USD
+                                </a>
+                              
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                  <a class="dropdown-item" href="#">USD</a>
+                                  <a class="dropdown-item" href="#">THB</a>
+                                  <a class="dropdown-item" href="#">CNY</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="header__right"> 
+                            
+                            <div class="header__right__search">
+                                search
+                            </div>
+        
+                            <div class="header__right__wish">
+                                wish-list
+                            </div>
+        
+                            <div class="dropdown header__right__account">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+        
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+
+    <!------------------------------ section navbar ------------------------->
+
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <div class="nav__left">
+                    <div class="nav__left__logo">
+                        Logo
+                    </div>
+                </div>
+    
+                <div class="nav__right">
+                    <div class="nav__right__menu">
+                        <ul>
+                            <li><a href="index2.html">Home</a></li>
+                            <li><a href="lingerie.html">Lingerie</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" id="cart">
+                        <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-dropdown-button"
+                        id="dropdownMenuLink3" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                            <span id="cart-total"> (01)</span> 
+                        </button>
+                        <ul class="dropdown-menu cart-dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                            <li>
+                              <table class="table table-striped">
+                                <tbody>
+                                  <tr>
+                                    <td class="text-center"><a href="#"><img class="img-thumbnail" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" src="https://images.unsplash.com/photo-1578467759458-50ac153b78b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></a></td>
+                                    <td class="text-left"><a href="#">lorem ippsum dolor dummy</a></td>
+                                    <td class="text-right">x 1</td>
+                                    <td class="text-right">$254.00</td>
+                                    <td class="text-center"><button class="btn btn-danger btn-xs" title="Remove" type="button"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </li>
+                            <li>
+                              <div style="border-top:1px solid #dee2e6 ;">
+                                <table class="table table-bordered">
+                                  <tbody>
+                                    <tr>
+                                      <td class="text-right"><strong>Sub-Total</strong></td>
+                                      <td class="text-right">$210.00</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                                      <td class="text-right">$2.00</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-right"><strong>VAT (20%)</strong></td>
+                                      <td class="text-right">$42.00</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-right"><strong>Total</strong></td>
+                                      <td class="text-right">$254.00</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p class="text-right"> <span class="btn-viewcart"><a href="cart.html"><strong><i class="fa fa-shopping-cart"></i> View Cart</strong></a></span> <span class="btn-checkout"><a href="checkout.html"><strong><i class="fa fa-share"></i> Checkout</strong></a></span> </p>
+                              </div>
+                            </li>
+                          </ul>
+                        <!-- <a href="cart.html">Cart</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!------------------------------ blog -------------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="blog-content mt-5">
+                    <div class="blog">
+                        <div class="img-blog">
+                            <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350" width="100%" height="300px" alt="">
+                            <span class="blog-hover"></span>
+                            <span class="readmore-hover">
+                                <a href="#">Read More</a> 
+                            </span>
+                        </div>
+                        <div class="content-blog">
+                            <span class="blog-date">02/05/2016</span>
+                            <h2 class="blog-name">
+                                <a href="#">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil, aspernatur ...
+                                </a>
+                            </h2>
+                            <span class="blog-author">By<a href="#"> xxx</a></span>
+                            <span class="blog-comment">3Comments</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam quidem, et quaerat perferendis consectetur. Neque, asperiores officia! Saepe minus autem facilis ut.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-content mt-5">
+                    <div class="blog">
+                        <div class="img-blog">
+                            <img src="https://images.unsplash.com/photo-1550951196-1992d5cb8c2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1407" width="100%" height="300px" alt="">
+                            <span class="blog-hover"></span>
+                            <span class="readmore-hover">
+                                <a href="#">Read More</a> 
+                            </span>
+                        </div>
+                        <div class="content-blog">
+                            <span class="blog-date">02/05/2016</span>
+                            <h2 class="blog-name">
+                                <a href="#">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil, aspernatur ...
+                                </a>
+                            </h2>
+                            <span class="blog-author">By<a href="#"> xxx</a></span>
+                            <span class="blog-comment">3Comments</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam quidem, et quaerat perferendis consectetur. Neque, asperiores officia! Saepe minus autem facilis ut.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 store mt-5">
+                <div class="category">
+                    <div class="category__head head">
+                        <h5 class="mb-4">Top Category</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="plus" style="height: 20px; width: 20px;
+                            z-index: 9;
+                            text-align: center;
+                            cursor: pointer;
+                            position: static;
+                            float: right;">&#43;
+                            </div>
+                            <a href="#">Desktops</a>
+                            <div class="toggle">
+                                <ul class="">
+                                    <li>PC</li>
+                                    <li>MAC</li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li><a href="#">Laptops & Notebooks</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Phones & PDAs</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">MP3 Players</a></li>
+                    </ul>
+                </div>         
+            </div>
+        </div>
+    </div>
+
+
+
+     <!-----------------------   top footer   -------------------------------------->
+     <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <h3>Sign up for our Newsletter :-</h3>
+                    <div class="inline-form">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <button type="submit" class="btn btn-large btn-primary">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="social">
+                        <h3>Follow me :-</h3>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- middle footer --------------------------------------->
+    <div class="middle-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Categorie</h4>
+                    <ul>
+                        <li><a href="#">Chelsea</a></li>
+                        <li><a href="#">ManU</a></li>
+                        <li><a href="#">Arsenal</a></li>
+                        <li><a href="#">ManCity</a></li>
+                        <li><a href="#">Liverpool</a></li>
+                        <li><a href="#">TOT</a></li>
+                        <li><a href="#">Barcelona</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Juventus</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h4>Categorie</h4>
+                    <ul>
+                        <li><a href="#">Chelsea</a></li>
+                        <li><a href="#">ManU</a></li>
+                        <li><a href="#">Arsenal</a></li>
+                        <li><a href="#">ManCity</a></li>
+                        <li><a href="#">Liverpool</a></li>
+                        <li><a href="#">TOT</a></li>
+                        <li><a href="#">Barcelona</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Juventus</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h4>Categorie</h4>
+                    <ul>
+                        <li><a href="#">Chelsea</a></li>
+                        <li><a href="#">ManU</a></li>
+                        <li><a href="#">Arsenal</a></li>
+                        <li><a href="#">ManCity</a></li>
+                        <li><a href="#">Liverpool</a></li>
+                        <li><a href="#">TOT</a></li>
+                        <li><a href="#">Barcelona</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Juventus</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        
+
+
+    <!----------------------- bottom footer --------------------------------------->
+    
+    <div class="container">
+        <div class="bottom-footer text-center">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p><a href="https://www.linkedin.com/in/dunyawat-hongsupangpan-9895b318a/" target="_blank">Copyright - Created by .... © 2020</a></p>
+        </div>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

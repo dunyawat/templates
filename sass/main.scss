@@ -321,12 +321,34 @@ header{
 
         li{
             display: inline-block;
-            padding: 0 40px;
+
+            a{
+                padding: 0 40px;
+                color: white;
+
+                &:hover{
+                    color: yellow;
+                    text-decoration: none;
+                }
+            }
+
+            .active{
+                color: yellow;
+            }
+            
         }
+        li:first-child::before {
+            content: "";
+        }
+        li::before {
+            content: "|";
+            color: #b3b3b3;
+        }
+
     }
 }
 
-.last-news{
+.last-news,.blog-content{
     color: white;
 
     .blog{
@@ -604,6 +626,57 @@ header{
     }
 }
 
+.category-page-wrapper {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #333;
+    padding: 20px;
+
+    .control-label{
+        float: left;
+        font-weight: bold;
+    }
+
+    .form-control{
+        background: transparent none repeat scroll 0 0;
+        padding: 0;
+        height: auto;
+        border: 0 none !important;
+
+    }
+
+    .sort-wrapper {
+        width: auto;
+        margin: 0px 10px 0 0;
+        padding: 0 0px 0 0;
+        border: none;
+        display: inline-block;
+        float: left;
+
+        label{
+            padding: 0;
+        }
+
+        .sort-inner{
+            float: left;
+            padding-left: 10px;
+
+            select{
+                width: 100%;
+            }
+        }
+    }
+
+    .page-wrapper{
+        float: left;
+    }
+
+    .list-grid-wrapper{
+        float: right;
+    }
+}
+
+
 
 
 
@@ -688,6 +761,56 @@ header{
     
         :hover{
             color: green;
+        }
+    }
+}
+
+.category-page-wrapper{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #333;
+    padding: 20px;
+
+    .result-inner {
+        float: left;
+        margin: 10px;
+    }
+
+    .pagination-inner {
+        float: right;
+
+        .pagination {
+            margin: 0;
+
+
+            
+
+            li{ 
+              display: inline;
+
+              span{
+                background: #FFE600;
+                border: 1px solid #FFE600;
+                color: #000;
+                position: relative;
+                float: left;
+                padding: 6px 12px;
+                line-height: 1.428571429;
+                text-decoration: none;
+                margin-right: 10px;
+              }
+
+              a{
+                margin-right: 10px;
+                border: 1px solid #333;
+                color: #fff;
+                position: relative;
+                float: left;
+                padding: 6px 12px;
+                line-height: 1.428571429;
+                text-decoration: none;
+              }
+            }
         }
     }
 }
